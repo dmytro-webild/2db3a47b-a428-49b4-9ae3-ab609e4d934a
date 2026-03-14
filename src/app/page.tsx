@@ -228,7 +228,7 @@ export default function LandingPage() {
               id: "faq-6",              title: "Can I upgrade or downgrade my plan?",              content: "Yes. You can upgrade to a higher tier anytime to access more features, or downgrade if you want to reduce costs. Changes take effect immediately on your next billing cycle."
             }
           ]}
-          imageSrc="http://img.b2bpic.net/free-vector/tropical-foliage-log-landing-page_52683-23871.jpg"
+          imageSrc="http://img.b2bpic.net/free-vector/tropical-foliage-log-landing-page_52683-23871.jpg?_wi=1"
           imageAlt="FAQ and support resources"
           mediaPosition="right"
         />
@@ -244,7 +244,7 @@ export default function LandingPage() {
           background={{ variant: "radial-gradient" }}
           useInvertedBackground={false}
           mediaAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-vector/tropical-foliage-log-landing-page_52683-23871.jpg"
+          imageSrc="http://img.b2bpic.net/free-vector/tropical-foliage-log-landing-page_52683-23871.jpg?_wi=2"
           imageAlt="Get started with TropismLabs"
           mediaPosition="right"
           inputPlaceholder="Enter your email address"
