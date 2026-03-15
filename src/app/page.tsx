@@ -49,7 +49,7 @@ export default function LandingPage() {
             { name: "Why Us", id: "why-us" },
             { name: "FAQ", id: "faq" }
           ]}
-          button={{ text: "Get Started", onClick: handleGetStarted }}
+          button={{ text: "Get Started", href: "mailto:tropisimm@gmail.com?subject=Get%20Started%20with%20TropismLabs&body=I%20would%20like%20to%20get%20started%20with%20TropismLabs." }}
         />
       </div>
 
