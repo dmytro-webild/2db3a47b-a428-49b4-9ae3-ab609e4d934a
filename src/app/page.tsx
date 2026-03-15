@@ -15,8 +15,16 @@ import { Award, CheckCircle, DollarSign, HelpCircle, Rocket, Star, Zap, ArrowRig
 
 export default function LandingPage() {
   const handleContactSubmit = (email: string) => {
-    console.log('Contact form submitted with email:', email);
-    // Add your form submission logic here
+    // Send email to tropisimm@gmail.com
+    window.location.href = `mailto:tropisimm@gmail.com?subject=New%20Lead%20from%20TropismLabs&body=Email:%20${encodeURIComponent(email)}`;
+  };
+
+  const handleGetStarted = () => {
+    window.location.href = `mailto:tropisimm@gmail.com?subject=Get%20Started%20with%20TropismLabs&body=I%20would%20like%20to%20get%20started%20with%20TropismLabs.`;
+  };
+
+  const handleLearnMore = () => {
+    window.location.href = `mailto:tropisimm@gmail.com?subject=Learn%20More%20About%20TropismLabs&body=I%20would%20like%20to%20learn%20more%20about%20your%20services.`;
   };
 
   return (
@@ -41,7 +49,7 @@ export default function LandingPage() {
             { name: "Why Us", id: "why-us" },
             { name: "FAQ", id: "faq" }
           ]}
-          button={{ text: "Get Started", href: "#contact" }}
+          button={{ text: "Get Started", onClick: handleGetStarted }}
         />
       </div>
 
@@ -50,8 +58,8 @@ export default function LandingPage() {
           logoText="Grow Your Business With Smart Automation"
           description="At TropismLabs, we help businesses attract more customers, respond to leads faster, and build stronger online reputations. From high-converting websites to automated follow-ups and review systems, we create tools that work for your business 24/7. Turn missed opportunities into loyal customers."
           buttons={[
-            { text: "Start Your Growth Journey", href: "#contact" },
-            { text: "Learn More", href: "#services" }
+            { text: "Start Your Growth Journey", onClick: handleLearnMore },
+            { text: "Learn More", onClick: handleLearnMore }
           ]}
           buttonAnimation="slide-up"
           imageSrc="http://img.b2bpic.net/free-photo/business-concept-with-progress-close-up_23-2149151161.jpg"
@@ -93,21 +101,15 @@ export default function LandingPage() {
           products={[
             {
               id: "websites",              brand: "Core",              name: "Functional Websites",              price: "$500",              rating: 5,
-              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/landing-page-business-work-solutions_23-2148355901.jpg",              imageAlt: "Website development service",              onProductClick: () => {
-                window.location.href = '#contact';
-              }
+              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/landing-page-business-work-solutions_23-2148355901.jpg",              imageAlt: "Website development service",              onProductClick: handleGetStarted
             },
             {
               id: "review-funnel",              brand: "Growth",              name: "5-Star Review Funnel",              price: "Included",              rating: 5,
-              reviewCount: "Growth plans",              imageSrc: "http://img.b2bpic.net/free-photo/businessman-doing-phone-call-looking-charts_23-2148017122.jpg",              imageAlt: "Review management automation",              onProductClick: () => {
-                window.location.href = '#contact';
-              }
+              reviewCount: "Growth plans",              imageSrc: "http://img.b2bpic.net/free-photo/businessman-doing-phone-call-looking-charts_23-2148017122.jpg",              imageAlt: "Review management automation",              onProductClick: handleGetStarted
             },
             {
               id: "missed-calls",              brand: "Engagement",              name: "Missed Call Text Back",              price: "$97",              rating: 5,
-              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/isometric-view-mobile-phone-with-instagram-post_23-2147822982.jpg",              imageAlt: "Automated messaging system",              onProductClick: () => {
-                window.location.href = '#contact';
-              }
+              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/isometric-view-mobile-phone-with-instagram-post_23-2147822982.jpg",              imageAlt: "Automated messaging system",              onProductClick: handleGetStarted
             }
           ]}
         />
@@ -125,19 +127,19 @@ export default function LandingPage() {
           features={[
             {
               title: "Functional Websites",              description: "Fast, mobile-friendly websites designed to convert visitors into customers. Includes lead capture forms, review showcases, and local Google optimization.",              buttonIcon: ArrowRight,
-              buttonHref: "#contact"
+              buttonOnClick: handleGetStarted
             },
             {
               title: "5-Star Magic Review Funnel",              description: "Automated system that gently reminds customers until they leave feedback, helping you consistently collect more 5-star reviews.",              buttonIcon: ArrowRight,
-              buttonHref: "#contact"
+              buttonOnClick: handleGetStarted
             },
             {
               title: "Missed Call Text Back",              description: "Instantly sends text messages when you miss calls, letting customers know you received their call and will respond soon. Never lose a lead.",              buttonIcon: ArrowRight,
-              buttonHref: "#contact"
+              buttonOnClick: handleGetStarted
             },
             {
               title: "Local SEO Optimization",              description: "Optimize your website so customers find you on Google. Includes keyword research, website optimization, and ongoing improvements.",              buttonIcon: ArrowRight,
-              buttonHref: "#contact"
+              buttonOnClick: handleGetStarted
             }
           ]}
         />
@@ -158,25 +160,25 @@ export default function LandingPage() {
               id: "website",              title: "Website Development",              price: "$500",              period: "One-time",              features: [
                 "Custom functional website",                "Mobile-friendly design",                "On-site SEO setup",                "Contact and lead capture forms",                "Secure hosting setup",                "Review showcase integration"
               ],
-              button: { text: "Get Website", href: "#contact" }
+              button: { text: "Get Website", onClick: handleGetStarted }
             },
             {
               id: "starter",              title: "Starter Automation",              price: "$97",              period: "",              features: [
                 "Missed Call Text Back",                "Basic Lead Follow-Up",                "Customer Messaging",                "Perfect for first-time users",                "No contract required",                "Cancel anytime"
               ],
-              button: { text: "Start Free Trial", href: "#contact" }
+              button: { text: "Start Free Trial", onClick: handleGetStarted }
             },
             {
               id: "growth",              title: "Growth Automation",              price: "$197",              period: "",              features: [
                 "Everything in Starter",                "5-Star Review Funnel",                "Automated Review Reminders",                "Reputation Management",                "Build trust and reviews",                "Most popular choice"
               ],
-              button: { text: "Start Growth", href: "#contact" }
+              button: { text: "Start Growth", onClick: handleGetStarted }
             },
             {
               id: "pro",              title: "Pro Automation",              price: "$297",              period: "",              features: [
                 "Everything in Growth",                "Advanced lead automation",                "Customer re-engagement campaigns",                "Ongoing improvements",                "Priority support",                "Maximum growth potential"
               ],
-              button: { text: "Go Pro", href: "#contact" }
+              button: { text: "Go Pro", onClick: handleGetStarted }
             }
           ]}
         />
