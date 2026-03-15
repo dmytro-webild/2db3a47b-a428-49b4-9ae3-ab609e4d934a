@@ -21,7 +21,7 @@ export default function LandingPage() {
       borderRadius="rounded"
       contentWidth="mediumLarge"
       sizing="largeSmallSizeMediumTitles"
-      background="noise"
+      background="circleGradient"
       cardStyle="inset"
       primaryButtonStyle="gradient"
       secondaryButtonStyle="radial-glow"
@@ -95,8 +95,8 @@ export default function LandingPage() {
               reviewCount: "Growth plans",              imageSrc: "http://img.b2bpic.net/free-photo/businessman-doing-phone-call-looking-charts_23-2148017122.jpg",              imageAlt: "Review management automation"
             },
             {
-              id: "missed-calls",              brand: "Engagement",              name: "Missed Call Text Back",              price: "$97+",              rating: 5,
-              reviewCount: "Monthly",              imageSrc: "http://img.b2bpic.net/free-vector/isometric-view-mobile-phone-with-instagram-post_23-2147822982.jpg",              imageAlt: "Automated messaging system"
+              id: "missed-calls",              brand: "Engagement",              name: "Missed Call Text Back",              price: "$97",              rating: 5,
+              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/isometric-view-mobile-phone-with-instagram-post_23-2147822982.jpg",              imageAlt: "Automated messaging system"
             }
           ]}
         />
@@ -150,19 +150,19 @@ export default function LandingPage() {
               button: { text: "Get Website", href: "#contact" }
             },
             {
-              id: "starter",              title: "Starter Automation",              price: "$97",              period: "/month",              features: [
+              id: "starter",              title: "Starter Automation",              price: "$97",              period: "",              features: [
                 "Missed Call Text Back",                "Basic Lead Follow-Up",                "Customer Messaging",                "Perfect for first-time users",                "No contract required",                "Cancel anytime"
               ],
               button: { text: "Start Free Trial", href: "#contact" }
             },
             {
-              id: "growth",              title: "Growth Automation",              price: "$197",              period: "/month",              features: [
+              id: "growth",              title: "Growth Automation",              price: "$197",              period: "",              features: [
                 "Everything in Starter",                "5-Star Review Funnel",                "Automated Review Reminders",                "Reputation Management",                "Build trust and reviews",                "Most popular choice"
               ],
               button: { text: "Start Growth", href: "#contact" }
             },
             {
-              id: "pro",              title: "Pro Automation",              price: "$297",              period: "/month",              features: [
+              id: "pro",              title: "Pro Automation",              price: "$297",              period: "",              features: [
                 "Everything in Growth",                "Advanced lead automation",                "Customer re-engagement campaigns",                "Ongoing improvements",                "Priority support",                "Maximum growth potential"
               ],
               button: { text: "Go Pro", href: "#contact" }
@@ -268,9 +268,9 @@ export default function LandingPage() {
             {
               title: "Pricing",              items: [
                 { label: "Website ($500)", href: "#pricing" },
-                { label: "Starter ($97/mo)", href: "#pricing" },
-                { label: "Growth ($197/mo)", href: "#pricing" },
-                { label: "Pro ($297/mo)", href: "#pricing" }
+                { label: "Starter ($97)", href: "#pricing" },
+                { label: "Growth ($197)", href: "#pricing" },
+                { label: "Pro ($297)", href: "#pricing" }
               ]
             },
             {
