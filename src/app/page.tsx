@@ -183,16 +183,16 @@ export default function LandingPage() {
           animationType="slide-up"
           metrics={[
             {
-              id: "simple",              value: "Simple",              title: "Easy To Use",              description: "Everything is designed to be straightforward, so you can focus on running your business, not learning complicated software.",              videoSrc: "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc2MobXA0MikuaGVhZGVyKWFiY3RbaHQtc1oy"
+              id: "simple",              value: "Simple",              title: "Easy To Use",              description: "Everything is designed to be straightforward, so you can focus on running your business, not learning complicated software.",              videoSrc: "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc2MobXA0MikuaGVhZGVyKWFiY3RbaHQtc1oy?_wi=1"
             },
             {
-              id: "affordable",              value: "Fair",              title: "Affordable Pricing",              description: "Our goal is long-term partnerships. We keep prices reasonable so you stay with us for years, not weeks.",              videoSrc: "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc2MobXA0MikuaGVhZGVyKWFiY3RbaHQtc1oy"
+              id: "affordable",              value: "Fair",              title: "Affordable Pricing",              description: "Our goal is long-term partnerships. We keep prices reasonable so you stay with us for years, not weeks.",              videoSrc: "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc2MobXA0MikuaGVhZGVyKWFiY3RbaHQtc1oy?_wi=2"
             },
             {
-              id: "flexible",              value: "Flexible",              title: "No Contracts",              description: "Stay because you love the service, not because you're locked in. Cancel anytime with zero penalties or complications.",              videoSrc: "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc2MobXA0MikuaGVhZGVyKWFiY3RbaHQtc1oy"
+              id: "flexible",              value: "Flexible",              title: "No Contracts",              description: "Stay because you love the service, not because you're locked in. Cancel anytime with zero penalties or complications.",              videoSrc: "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc2MobXA0MikuaGVhZGVyKWFiY3RbaHQtc1oy?_wi=3"
             },
             {
-              id: "honest",              value: "Real",              title: "No Bullsh*t",              description: "We focus on genuine results instead of marketing fluff. Our systems are proven and designed for real business growth.",              videoSrc: "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc2MobXA0MikuaGVhZGVyKWFiY3RbaHQtc1oy"
+              id: "honest",              value: "Real",              title: "No Bullsh*t",              description: "We focus on genuine results instead of marketing fluff. Our systems are proven and designed for real business growth.",              videoSrc: "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc2MobXA0MikuaGVhZGVyKWFiY3RbaHQtc1oy?_wi=4"
             }
           ]}
         />
@@ -229,7 +229,7 @@ export default function LandingPage() {
               id: "faq-6",              title: "Can I upgrade or downgrade my plan?",              content: "Yes. You can upgrade to a higher tier anytime to access more features, or downgrade if you want to reduce costs. Changes take effect immediately on your next billing cycle."
             }
           ]}
-          imageSrc="http://img.b2bpic.net/free-vector/tropical-foliage-log-landing-page_52683-23871.jpg"
+          imageSrc="http://img.b2bpic.net/free-vector/tropical-foliage-log-landing-page_52683-23871.jpg?_wi=1"
           imageAlt="FAQ and support resources"
           mediaPosition="right"
         />
@@ -245,7 +245,7 @@ export default function LandingPage() {
           background={{ variant: "radial-gradient" }}
           useInvertedBackground={false}
           mediaAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-vector/tropical-foliage-log-landing-page_52683-23871.jpg"
+          imageSrc="http://img.b2bpic.net/free-vector/tropical-foliage-log-landing-page_52683-23871.jpg?_wi=2"
           imageAlt="Get started with TropismLabs"
           mediaPosition="right"
           inputPlaceholder="Enter your email address"
