@@ -15,16 +15,16 @@ import { Award, CheckCircle, DollarSign, HelpCircle, Rocket, Star, Zap, ArrowRig
 
 export default function LandingPage() {
   const handleContactSubmit = (email: string) => {
-    // Send email to tropisimm@gmail.com
-    window.location.href = `mailto:tropisimm@gmail.com?subject=New%20Lead%20from%20TropismLabs&body=Email:%20${encodeURIComponent(email)}`;
+    // Send email to tropismm@gmail.com
+    window.location.href = `mailto:tropismm@gmail.com?subject=New%20Lead%20from%20TropismLabs&body=Email:%20${encodeURIComponent(email)}`;
   };
 
   const handleGetStarted = () => {
-    window.location.href = `mailto:tropisimm@gmail.com?subject=Get%20Started%20with%20TropismLabs&body=I%20would%20like%20to%20get%20started%20with%20TropismLabs.`;
+    window.location.href = `mailto:tropismm@gmail.com?subject=Get%20Started%20with%20TropismLabs&body=I%20would%20like%20to%20get%20started%20with%20TropismLabs.`;
   };
 
   const handleLearnMore = () => {
-    window.location.href = `mailto:tropisimm@gmail.com?subject=Learn%20More%20About%20TropismLabs&body=I%20would%20like%20to%20learn%20more%20about%20your%20services.`;
+    window.location.href = `mailto:tropismm@gmail.com?subject=Learn%20More%20About%20TropismLabs&body=I%20would%20like%20to%20learn%20more%20about%20your%20services.`;
   };
 
   return (
@@ -49,7 +49,7 @@ export default function LandingPage() {
             { name: "Why Us", id: "why-us" },
             { name: "FAQ", id: "faq" }
           ]}
-          button={{ text: "Get Started", href: "mailto:tropisimm@gmail.com?subject=Get%20Started%20with%20TropismLabs&body=I%20would%20like%20to%20get%20started%20with%20TropismLabs." }}
+          button={{ text: "Get Started", href: "mailto:tropismm@gmail.com?subject=Get%20Started%20with%20TropismLabs&body=I%20would%20like%20to%20get%20started%20with%20TropismLabs." }}
         />
       </div>
 
@@ -297,7 +297,7 @@ export default function LandingPage() {
             },
             {
               title: "Contact",              items: [
-                { label: "Email: tropisimm@gmail.com", href: "mailto:tropisimm@gmail.com" },
+                { label: "Email: tropismm@gmail.com", href: "mailto:tropismm@gmail.com" },
                 { label: "Get Support", href: "#contact" },
                 { label: "Privacy Policy", href: "#" },
                 { label: "Terms of Service", href: "#" }
