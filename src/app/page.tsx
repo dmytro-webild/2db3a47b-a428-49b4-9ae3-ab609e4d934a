@@ -14,6 +14,11 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import { Award, CheckCircle, DollarSign, HelpCircle, Rocket, Star, Zap, ArrowRight } from 'lucide-react';
 
 export default function LandingPage() {
+  const handleContactSubmit = (email: string) => {
+    console.log('Contact form submitted with email:', email);
+    // Add your form submission logic here
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="icon-arrow"
@@ -88,15 +93,21 @@ export default function LandingPage() {
           products={[
             {
               id: "websites",              brand: "Core",              name: "Functional Websites",              price: "$500",              rating: 5,
-              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/landing-page-business-work-solutions_23-2148355901.jpg",              imageAlt: "Website development service"
+              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/landing-page-business-work-solutions_23-2148355901.jpg",              imageAlt: "Website development service",              onProductClick: () => {
+                window.location.href = '#contact';
+              }
             },
             {
               id: "review-funnel",              brand: "Growth",              name: "5-Star Review Funnel",              price: "Included",              rating: 5,
-              reviewCount: "Growth plans",              imageSrc: "http://img.b2bpic.net/free-photo/businessman-doing-phone-call-looking-charts_23-2148017122.jpg",              imageAlt: "Review management automation"
+              reviewCount: "Growth plans",              imageSrc: "http://img.b2bpic.net/free-photo/businessman-doing-phone-call-looking-charts_23-2148017122.jpg",              imageAlt: "Review management automation",              onProductClick: () => {
+                window.location.href = '#contact';
+              }
             },
             {
               id: "missed-calls",              brand: "Engagement",              name: "Missed Call Text Back",              price: "$97",              rating: 5,
-              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/isometric-view-mobile-phone-with-instagram-post_23-2147822982.jpg",              imageAlt: "Automated messaging system"
+              reviewCount: "One-time",              imageSrc: "http://img.b2bpic.net/free-vector/isometric-view-mobile-phone-with-instagram-post_23-2147822982.jpg",              imageAlt: "Automated messaging system",              onProductClick: () => {
+                window.location.href = '#contact';
+              }
             }
           ]}
         />
@@ -251,6 +262,7 @@ export default function LandingPage() {
           inputPlaceholder="Enter your email address"
           buttonText="Get Started"
           termsText="By signing up, you agree to receive updates about TropismLabs services. We respect your privacy and will never spam."
+          onSubmit={handleContactSubmit}
         />
       </div>
 
