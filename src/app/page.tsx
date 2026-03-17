@@ -46,8 +46,8 @@ export default function LandingPage() {
           navItems={[
             { name: "Services", id: "services" },
             { name: "Pricing", id: "pricing" },
-            { name: "Why Us", id: "why-us" },
-            { name: "FAQ", id: "faq" }
+            { name: "FAQ", id: "faq" },
+            { name: "Contact", id: "contact" }
           ]}
           button={{ text: "Get Started", href: "mailto:tropisimm@gmail.com?subject=Get%20Started%20with%20TropismLabs&body=I%20would%20like%20to%20get%20started%20with%20TropismLabs." }}
         />
@@ -290,7 +290,7 @@ export default function LandingPage() {
             {
               title: "Company",              items: [
                 { label: "About TropismLabs", href: "#about" },
-                { label: "Why Us", href: "#why-us" },
+                { label: "Our Services", href: "#services" },
                 { label: "FAQ", href: "#faq" },
                 { label: "Contact", href: "#contact" }
               ]
